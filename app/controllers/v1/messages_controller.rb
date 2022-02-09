@@ -1,10 +1,6 @@
 class V1::MessagesController < ApplicationController
   def index
-    render json: { :messages => [
-      {
-        :name => 'paka',
-        :hello => 'hello my friends'
-      }
-    ] }.to_json
+  @messages = Messages.all.sample(1)
+  render json: { :messages => @messages }.to_json
   end
 end
