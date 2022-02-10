@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
-class V1::MessagesControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+module V1
+  class MessagesControllerTest < ActionDispatch::IntegrationTest
+    # test "the truth" do
+    #   assert true
+    # end
+  end
 end
